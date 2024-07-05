@@ -1,0 +1,34 @@
+/* src/styles.css */
+
+.pdf-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .logo-cell {
+    width: 75%;
+    height: 25px;
+    text-align: left;
+  }
+  
+  .date-cell {
+    width: 25%;
+    height: 25px;
+    text-align: right;
+  }
+  
+  .title-cell {
+    width: 100%;
+    height: 15px;
+    text-align: center;
+  }
+  
+  .title-hr {
+    border: 3px solid black;
+  }
+  
+  .content-cell {
+    width: 100%;
+    text-align: center;
+  }
+  
