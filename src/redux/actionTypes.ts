@@ -1,3 +1,8 @@
-// redux/actionTypes.ts
+// for fetching data from Form.tsx
+export const FETCH_DATA = 'FETCH_DATA';
 
-export const PDF_INFO = 'PDF_INFO';
+
+
+
+// // redux/actionTypes.ts
+// export const PDF_INFO = 'PDF_INFO';

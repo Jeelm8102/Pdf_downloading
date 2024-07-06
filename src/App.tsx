@@ -1,12 +1,14 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import PdfExport from './components/PdfExport';
-import store from './redux/store'; // Ensure you have a configured Redux store
+import Form from './components/Form';
+import store from './redux/store';
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
       <div className="App">
+        <Form />
         <PdfExport
           title="Dynamic Title"
           filename="dynamic"
@@ -22,9 +24,34 @@ export default App;
 
 
 
+// 3] suse this to pass whole html file as a prop with real-time data
+
+// import React from 'react';
+// import { Provider } from 'react-redux';
+// import PdfExport from './components/PdfExport';
+// import store from './redux/store'; // Ensure you have a configured Redux store
+
+// const App: React.FC = () => {
+//   return (
+//     <Provider store={store}>
+//       <div className="App">
+//         <PdfExport
+//           title="Dynamic Title"
+//           filename="dynamic"
+//           module="sample"
+//           strSiteView="sample"
+//         />
+//       </div>
+//     </Provider>
+//   );
+// };
+
+// export default App;
 
 
-// use this to pass whole html file as a prop for data
+
+
+// 2] passing whole html but no real-time data
 
 // import React from 'react';
 // import { Provider } from 'react-redux';
@@ -83,6 +110,8 @@ export default App;
 // };
 
 // export default App;
+
+
 
 
 // 1] Use this to pass data individually through props
